@@ -1,8 +1,8 @@
 <?php
 
-namespace aji\simplesoap;
+namespace ajiyakin\simplesoapclient;
 
-use aji\simplesoap\config\SimpleSoapConfigInterface as ConfigInterface;
+use ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface as ConfigInterface;
 
 /**
  * Simple Soap Client Caller
@@ -16,7 +16,7 @@ class SimpleSoapClient
     
     /**
      * Initalization need class that implement
-     * aji\simplesoap\config\SimpleSoapConfigInterface
+     * ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface
      * 
      * @param ConfigInterface $configuration Configuration interface
      */

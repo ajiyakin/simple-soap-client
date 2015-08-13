@@ -1,5 +1,5 @@
 {
-    "name": "aji/simplesoapclient",
+    "name": "ajiyakin/simplesoapclient",
     "description": "Simple soap client caller",
     "type": "library",
     "require-dev": {
@@ -14,6 +14,7 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"aji\\simplesoap\\": "src/"}
-    }
+        "psr-4": {"ajiyakin\\simplesoapclient\\": "src/"}
+    },
+    "version": "1.0"
 }

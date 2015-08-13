@@ -1,7 +1,7 @@
 <?php
 
-use aji\simplesoap\config\SimpleSoapConfigInterface as ConfigInterface;
-use aji\simplesoap\SimpleSoapClient as SoapClient;
+use ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface as ConfigInterface;
+use ajiyakin\simplesoapclient\SimpleSoapClient as SoapClient;
 
 /**
  * Description of SimpleSoapClientTest

@@ -1,6 +1,6 @@
 <?php
 
-namespace aji\simplesoap\config;
+namespace ajiyakin\simplesoapclient\config;
 
 /**
  *
