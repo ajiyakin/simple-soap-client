@@ -1,0 +1,19 @@
+{
+    "name": "aji/simplesoapclient",
+    "description": "Simple soap client caller",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aji Nurul Yakin",
+            "email": "ajiyakin91@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"aji\\simplesoap\\": "src/"}
+    }
+}
