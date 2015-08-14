@@ -21,9 +21,9 @@ Simple Soap Client Using PHP
 
 ## How to Use
 
-1. Create class that implementing ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface for your custom configuration
-2. Instantiate ajiyakin\simplesoapclient\SimpleSoapClient and inject your configuration object (from step 1 above)
-3. Call "execute" function from that object (from step 2)
+1. Create class that implementing `ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface` for your custom configuration
+2. Instantiate `ajiyakin\simplesoapclient\SimpleSoapClient` and inject your configuration object (from step 1 above)
+3. Call `execute` function from that object (from step 2)
 
 
 ## Example
