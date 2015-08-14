@@ -27,6 +27,27 @@ class SimpleSoapClient
     }
     
     /**
+     * Set configuration
+     * 
+     * @param ConfigInterface $newConfiguration
+     * @return SimpleSoapConfigInterface Current configuration
+     */
+    public function setConfiguration(ConfigInterface $newConfiguration)
+    {
+        return $this->configuration = $newConfiguration;
+    }
+    
+    /**
+     * Get current configuration
+     * 
+     * @return SimpleSoapConfigInterface
+     */
+    public function getConfiguration()
+    {
+        return $this->configuration;
+    }
+    
+    /**
      * Execute SOAP caller to call function name that was specified in injected
      * Soap configuration
      * 
