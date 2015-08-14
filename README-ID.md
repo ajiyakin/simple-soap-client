@@ -14,7 +14,7 @@ Simple Soap Client Menggunakan PHP
                 }
             ],
             "require": {
-                "ajiyakin/simplesoapclient": "1.0"
+                "ajiyakin/simplesoapclient": "dev-master"
             }
             ...
         }
@@ -288,5 +288,5 @@ saya telah diberi hak akses dengan username:`cinta` dan password:`rindu`.
   kembalian dari server. Bisa JSON, XML ataupun Object.
 
 
-# EXAMPLE UNTESTED !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# EXAMPLE UNTESTED !!!!!!!!
 
