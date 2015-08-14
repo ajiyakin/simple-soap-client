@@ -65,9 +65,14 @@ saya telah diberi hak akses dengan username:`cinta` dan password:`rindu`.
 
 ### Penyelesaian
 
-#### 1. Buat kelas yang mengimplementasikan
+#### 1. Buat kelas yang mengimplementasikan `SimpleSoapConfigInterface`
 
         <?php // file SoapConfig.php
+
+        namespace aji;
+
+        use ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface as ConfigInterface;
+
 
         class SoapConfig implements ConfigInterface
         {
@@ -100,6 +105,12 @@ saya telah diberi hak akses dengan username:`cinta` dan password:`rindu`.
 #### 2. Implementasikan konfigurasi yang telah dibuat
 
         <?php // file JodohController.php
+
+        namespace aji;
+
+        use ajiyakin\simplesoapclient\SimpleSoapClient;
+
+
         class JodohController
         {
             public function ambilJodoh()
