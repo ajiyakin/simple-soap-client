@@ -49,9 +49,9 @@ kurung sebelah nama fungsi itu loh kalo kita bikin fungsi).
 
 1. Buat kelas yang mengimplementasikan interface `SimpleSoapConfigInterface`
    untuk setiap configurasi yang berbeda.
-1. Create class that implementing ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface for your custom configuration
-2. Instantiate ajiyakin\simplesoapclient\SimpleSoapClient and inject your configuration object (from step 1 above)
-3. Call "execute" function from that object (from step 2)
+2. Instansiasi pemanggil soap (`SimpleSoapClient`), jangan lupan meng-inject
+   object configurasi yang telah dibuat.
+3. Panggil fungsi `execute` untuk mengeksekusi pemanggilan fungsi.
 
 
 ## Example
