@@ -145,7 +145,7 @@ class JodohController
          * Gampaaaangg...
          */
         $soap->getConfiguration()->setFunctionName('TolakJodoh');
-        $soap->getConfiguration()->setParamsName(array('alasan'=>'Fokus pendidikan'));
+        $soap->getConfiguration()->setParams(array('alasan'=>'Fokus pendidikan'));
         $result2 = $soap->execute();
         print_r($result2);
     }
