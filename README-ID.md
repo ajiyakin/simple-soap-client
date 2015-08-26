@@ -5,19 +5,21 @@ Simple Soap Client Menggunakan PHP
 
 ### Menggunakan Komposer
 
+```json
+{
+    ...
+    "repositories": [
         {
-            ...
-            "repositories": [
-                {
-                    "type": "vcs",
-                    "url": "https://github.com/ajiyakin/simple-soap-client"
-                }
-            ],
-            "require": {
-                "ajiyakin/simplesoapclient": "dev-master"
-            }
-            ...
+            "type": "vcs",
+            "url": "https://github.com/ajiyakin/simple-soap-client"
         }
+    ],
+    "require": {
+        "ajiyakin/simplesoapclient": "dev-master"
+    }
+    ...
+}
+```
 
 ## Persamaan Persepsi
 
