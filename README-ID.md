@@ -67,39 +67,41 @@ saya telah diberi hak akses dengan username:`cinta` dan password:`rindu`.
 
 #### 1. Buat kelas yang mengimplementasikan `SimpleSoapConfigInterface`
 
-        <?php // file SoapConfig.php
+{%highlight php%}
+<?php // file SoapConfig.php
 
-        namespace aji;
+namespace aji;
 
-        use ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface as ConfigInterface;
-
-
-        class SoapConfig implements ConfigInterface
-        {
-            private $url = 'http://nama.server/jodohku/soap?wsdl';
-            private $username = 'cinta';
-            private $password = 'rindu';
-
-            // secara default, nama fungsi ini akan dipanggil jika nama fungsi tidak di set manual
-            private $functionName = 'AmbilJodoh';
-
-            // secara default, parameter ini akan dikirimkan, jika paramter tidak diset
-            private $params = array(
-                'id_jodoh' = '123456789'
-            );
+use ajiyakin\simplesoapclient\config\SimpleSoapConfigInterface as ConfigInterface;
 
 
-            public function getUrl(){ return $this->url; }
-            public function getUsername(){ return $this->url; }
-            public function getPassword(){ return $this->url; }
-            public function getFunctionName(){ return $this->url; }
-            public function getParams() { return $this->params; }
-            public function setUrl($newUrl){ return $this->url = $newUrl; }
-            public function setUsername($newUsername){ return $this->url = $newUsername; }
-            public function setPassword($newPassword){ return $this->url = $newPassword; }
-            public function setFunctionName($newFunctionName){ return $this->url = $newFunctionName; }
-            public function setParams($newParams){ return $this->params = $newParams; }
-        }
+class SoapConfig implements ConfigInterface
+{
+    private $url = 'http://nama.server/jodohku/soap?wsdl';
+    private $username = 'cinta';
+    private $password = 'rindu';
+
+    // secara default, nama fungsi ini akan dipanggil jika nama fungsi tidak di set manual
+    private $functionName = 'AmbilJodoh';
+
+    // secara default, parameter ini akan dikirimkan, jika paramter tidak diset
+    private $params = array(
+        'id_jodoh' = '123456789'
+    );
+
+
+    public function getUrl(){ return $this->url; }
+    public function getUsername(){ return $this->url; }
+    public function getPassword(){ return $this->url; }
+    public function getFunctionName(){ return $this->url; }
+    public function getParams() { return $this->params; }
+    public function setUrl($newUrl){ return $this->url = $newUrl; }
+    public function setUsername($newUsername){ return $this->url = $newUsername; }
+    public function setPassword($newPassword){ return $this->url = $newPassword; }
+    public function setFunctionName($newFunctionName){ return $this->url = $newFunctionName; }
+    public function setParams($newParams){ return $this->params = $newParams; }
+}
+{%highlight%}
 
 
 #### 2. Implementasikan konfigurasi yang telah dibuat
