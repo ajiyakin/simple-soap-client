@@ -67,7 +67,7 @@ saya telah diberi hak akses dengan username:`cinta` dan password:`rindu`.
 
 #### 1. Buat kelas yang mengimplementasikan `SimpleSoapConfigInterface`
 
-{%highlight php%}
+```php
 <?php // file SoapConfig.php
 
 namespace aji;
@@ -101,7 +101,7 @@ class SoapConfig implements ConfigInterface
     public function setFunctionName($newFunctionName){ return $this->url = $newFunctionName; }
     public function setParams($newParams){ return $this->params = $newParams; }
 }
-{%highlight%}
+```
 
 
 #### 2. Implementasikan konfigurasi yang telah dibuat
