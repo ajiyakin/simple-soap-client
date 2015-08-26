@@ -7,7 +7,7 @@ Simple Soap Client Menggunakan PHP
 
 ```json
 {
-    ...
+    ....
     "repositories": [
         {
             "type": "vcs",
@@ -16,8 +16,8 @@ Simple Soap Client Menggunakan PHP
     ],
     "require": {
         "ajiyakin/simplesoapclient": "dev-master"
-    }
-    ...
+    },
+    ....
 }
 ```
 
@@ -108,48 +108,50 @@ class SoapConfig implements ConfigInterface
 
 #### 2. Implementasikan konfigurasi yang telah dibuat
 
-        <?php // file JodohController.php
+```php
+<?php // file JodohController.php
 
-        namespace aji;
+namespace aji;
 
-        use ajiyakin\simplesoapclient\SimpleSoapClient;
-
-
-        class JodohController
-        {
-            public function ambilJodoh()
-            {
-                // buat konfigurasi
-                $config = new SoapConfig();
-
-                // set nama fungsi
-                $config->setFunctionName('AmbilJodoh');
-
-                // set parameter
-                $params = array('id_jodoh' => '123456789');
-                $config->setParams($params);
-
-                // buat objek pemanggil soap (simple soap), jangan lupa inject configurasinya
-                $soap = new SimpleSoapClient($config);
-
-                // eksekusi
-                $result = $soap->execute();
-
-                // tampilkan hasilnya
-                print_r($result);
+use ajiyakin\simplesoapclient\SimpleSoapClient;
 
 
-                /**
-                 * Bagaimana jika saya ingin memanggil fungsi yang berbeda???
-                 * Gampaaaangg...
-                 */
-                $config->setFunctionName('TolakJodoh');
-                $config->setParams(array('alasan'=>'Fokus pendidikan'));
-                $soap->setConfiguration($config);
-                $result2 = $soap->execute();
-                print_r($result2);
-            }
-        }
+class JodohController
+{
+    public function ambilJodoh()
+    {
+        // buat konfigurasi
+        $config = new SoapConfig();
+
+        // set nama fungsi
+        $config->setFunctionName('AmbilJodoh');
+
+        // set parameter
+        $params = array('id_jodoh' => '123456789');
+        $config->setParams($params);
+
+        // buat objek pemanggil soap (simple soap), jangan lupa inject configurasinya
+        $soap = new SimpleSoapClient($config);
+
+        // eksekusi
+        $result = $soap->execute();
+
+        // tampilkan hasilnya
+        print_r($result);
+
+
+        /**
+         * Bagaimana jika saya ingin memanggil fungsi yang berbeda???
+         * Gampaaaangg...
+         */
+        $config->setFunctionName('TolakJodoh');
+        $config->setParams(array('alasan'=>'Fokus pendidikan'));
+        $soap->setConfiguration($config);
+        $result2 = $soap->execute();
+        print_r($result2);
+    }
+}
+```
 
 
 ### Unit Test Example
