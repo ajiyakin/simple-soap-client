@@ -144,9 +144,8 @@ class JodohController
          * Bagaimana jika saya ingin memanggil fungsi yang berbeda???
          * Gampaaaangg...
          */
-        $config->setFunctionName('TolakJodoh');
-        $config->setParams(array('alasan'=>'Fokus pendidikan'));
-        $soap->setConfiguration($config);
+        $soap->getConfiguration()->setFunctionName('TolakJodoh');
+        $soap->getConfiguration()->setParamsName(array('alasan'=>'Fokus pendidikan'));
         $result2 = $soap->execute();
         print_r($result2);
     }
